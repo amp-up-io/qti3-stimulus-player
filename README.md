@@ -18,10 +18,11 @@ The QTI 3 Stimulus Player supports all three sub-elements permitted in a qti-ass
 
 ## About The Project
 
-The QTI 3 Stimulus Player has API's, interfaces, and capabilities which are optimized for formative or classroom assessment settings.  Such settings typically require sophisticated QTI features such as adaptive items, item templating (sometimes called item "cloning"), template processing, and full response processing; i.e., scoring.  The QTI 3 Stimulus Player implements the full expressive QTI 3 Assessment Stimulus XML vocabulary according to best practices - including support for qti-catalog-info and Personal Needs and Preferences.  Consequently, you don't have to know anything about QTI.  Just install the component in your project, inject XML, and go!  
+The QTI 3 Stimulus Player component is 100% JavaScript and implements the full expressive QTI 3 Assessment Stimulus XML vocabulary according to best practices - including support for qti-stylesheet injection, qti-catalog-info and Personal Needs and Preferences.  Consequently, you don't have to know anything about QTI.  Just install the component in your project, inject qti-assessment-stimulus XML, and go!  
 
 <div align="center">
-  <p><b>Thumbnails of Stimulus Rendering</b></p>
+  <p><b>Thumbnail of Stimulus Rendering</b></p>
+  ![image](https://user-images.githubusercontent.com/898605/210104852-2f80c2b3-785e-465d-8359-c241572077c7.png)
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
