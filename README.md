@@ -22,7 +22,7 @@ The QTI 3 Stimulus Player component is 100% JavaScript and implements the full e
 
 <div align="center">
   <p><b>Thumbnail of Stimulus Rendering</b></p>
-  <img src="https://user-images.githubusercontent.com/898605/210104852-2f80c2b3-785e-465d-8359-c241572077c7.png" width="320" height="270">
+  <img src="https://user-images.githubusercontent.com/898605/210104852-2f80c2b3-785e-465d-8359-c241572077c7.png" width="400" height="270">
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
