@@ -31,7 +31,7 @@
     "axios": "^1.2.1",
     "bignumber.js": "^9.0.2",
     "core-js": "^3.6.5",
-    "qti3-item-player": "^0.3.10",
+    "qti3-item-player": "^0.3.20",
     "sweetalert2": "^11.3.1",
     "tippy.js": "^6.3.7",
     "vue": "^2.6.11"
