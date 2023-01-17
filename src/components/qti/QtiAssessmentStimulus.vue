@@ -64,7 +64,11 @@ export default {
        */
       stimulusBody: null,
       /*
-       * Try to parse this from xml:lang
+       * Parse this from xml:lang
+       */
+       lang: null,
+      /*
+       * Parse this from lang
        */
       locale: null,
       /*
@@ -137,12 +141,24 @@ export default {
     },
 
     /**
+     * @description Set an element's lang attribute.
+     * @param element DOM element to be set
+     * @param lang {String} language
+     */
+     setLang (element, lang) {
+      if (lang === null) return
+      element.setAttribute('lang', lang)
+    },
+
+    /**
      * @description Transform some qti-assessment-stimulus attributes.
      * Important: Run this at create time.  Mount is too late.
      */
     coerceItemAttributes () {
+      this.lang = qtiAttributeValidation.parseXmlLangAttribute(this.$props['xml:lang'])
+      
       // For now, return 'en' if nothing found. Sorry world.
-      this.locale = (typeof this.$props['xml-lang'] === 'undefined' ? 'en' : this.$props['xml-lang'])
+      this.locale = (this.lang === null ? 'en' : this.lang)
     },
 
     /**
@@ -214,6 +230,7 @@ export default {
   mounted () {
     if (this.isQtiValid) {
       try {
+        this.setLang(this.$refs.item, this.lang)
         this.validateChildren()
 
         console.log('[QtiAssessmentStimulus][Identifier]', this.identifier)
